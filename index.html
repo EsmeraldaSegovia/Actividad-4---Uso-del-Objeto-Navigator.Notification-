@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="estilos.css">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" id="viewport" content="width=device-width, height=device-height,
+initial-scale=1.0, maximum-scale=1.0,user-scalable=no;" />
+<script type="text/javascript" charset="utf-8"src="phonegap.js"></script>
+<script type="text/javascript" charset="utf-8">
+function onDeviceReady() {
+navigator.notification.alert("PhoneGap is ready!");
+}
+
+function conf() {
+navigator.notification.confirm('You are the winner!');
+}
+function onPrompt() {
+   navigator.notification.prompt('');
+}
+function beep() {
+navigator.notification.beep(2);
+}
+</script>
+</head>
+<body>
+	
+<h1>HelloWorld2</h1>
+<p>This is a sample PhoneGap application.</p>
+<p>Angeles Esmeralda y francisco de jesus </p>
+	
+<input id="clickMe1" type="button" class="but" value="alert" onclick="onDeviceReady();" />
+
+<input id="clickMe2" type="button" class="but1" value="confirm" onclick="conf();" />
+
+<input id="clickMe3" type="button" class="but2" value="prompt" onclick="prompt();" />
+
+<input id="clickMe4" type="button" class="but3" value="beep" onclick="beep();" />
+	
+</body>
+</html>
